@@ -1,0 +1,688 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ACACAC; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #707070; 
+}
+
+@font-face { src: url('../fonts/SFProDisplay-Bold.ttf'); font-family: sfbold;}
+@font-face { src: url('../fonts/SFProDisplay-Semibold.ttf'); font-family: sfsemi;}
+@font-face { src: url('../fonts/SFProDisplay-Regular.ttf'); font-family: sfregular;}
+@font-face { src: url('../fonts/SFProDisplay-Light.ttf'); font-family: sflight;}
+@font-face { src: url('../fonts/remixicon.ttf');}
+
+html{ scroll-behavior: smooth;}
+body{ font-family: sfregular; transition: all .3s cubic-bezier(.65,.19,.46,.84);}
+h1,h2,h3,h4,h5,h6{ font-family: sfbold; margin: 0!important;}
+ul{ list-style: none; margin: 0; padding: 0; padding-left: 15px;}
+a:hover{text-decoration: none;}
+p{ font-family: sfregular; letter-spacing: .5px;}
+.ptRed{ background-image: url('../images/component/red.png'); background-size: 125%; background-position: center; }
+.ptBlue{ background-image: url('../images/component/blue.png'); background-size: 125%; background-position: center; }
+.ptGreen{ background-image: url('../images/component/green.png'); background-size: 125%; background-position: center;}
+.container{ height: max-content!important; }
+.col-12{ padding: 0;}
+.underline{ text-decoration: underline;} .underline:hover{ text-decoration: underline!important;}
+.n-underline{ text-decoration: none!important;}
+
+.bg-red{ background-color: #FF3B30;} .text-red{ color: #FF3B30;}
+.bg-orange{ background-color: #FF9500;} .text-orange{ color: #FF9500;}
+.bg-yellow{ background-color: #FFCC00;} .text-yellow{ color: #FFCC00;}
+.bg-green{ background-color: #34C759;} .text-green{ color: #34C759;}
+.bg-lightblue{ background-color: #5AC8FA;} .text-lightblue{ color: #5AC8FA;}
+.bg-blue{ background-color: #007AFF;} .text-blue{ color: #007AFF;}
+.bg-darkblue { background-color: #13071A;} .text-darkblue { color: #13071A;}
+.bg-darkpurple{ background-color: #5856D6;} .text-darkpurple{ color: #5856D6;}
+.bg-purple{ background-color: #AF52DE;} .text-purple{ color: #AF52DE;}
+.bg-pink{ background-color: #FF2D55;} .text-pink{ color: #FF2D55;}
+.text-black{ color: #000;}
+
+.bg-dashboard{
+    display: flex;
+    background-color: #F8F8F8;
+    padding-bottom: 50px;
+}
+.sidebar{
+    flex: 2;
+    height: 100vh;
+    padding-top: 30px;
+    background-color: #FFF;
+    border-radius: 0 30px 30px 0;
+    z-index: 999;
+    position: fixed;
+}
+.bg-profil{
+    width: 100%;
+    height: 10vh;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.photo img{
+    width: 100%;
+}
+.bg-profil i{
+    font-size: 25px;
+    color: #C1C3C1;
+    margin-left: 5px;
+}
+.bg-profil h6{
+    margin-left: 10px!important;
+}
+.bg-profil p{
+    font-size: 12px;
+    color: #707070;
+    margin: 0;
+    margin-left: 10px!important;
+}
+.bg-profil .container-fluid{
+    padding-left: 10px;
+}
+.bg-menu ul li{
+    margin: 20px 0;
+}
+.bg-menu ul li a{
+    display: flex;
+    align-items: center;
+    color: rgba(17, 34, 85, .6);
+    font-size: 17px;
+    font-size: 14px;
+}
+.bg-menu ul li a:hover{
+    opacity: 1;
+}
+.bg-menu ul li a i{
+    margin-right: 10px;
+    font-size: 22px;
+}
+.bg-menu .active{
+    color: #112255;
+    font-family: sfsemi;
+    opacity: 1;
+}
+.copyright i{
+    margin-right: 5px;
+    font-size: 22px;
+}
+.copyright p{
+    font-size: 17px;
+    color: #112255;
+    letter-spacing: 8px;
+    margin: 0;
+    font-weight: bolder;
+    cursor: default;
+}
+
+
+.mainside{
+    flex: 9;
+    height: max-content;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+    margin-left: 200px;
+}
+.mainside .container{
+    padding: 0 50px;
+    padding-top: 30px;
+    height: max-content;
+}
+.mainside .nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainside .nav p{
+    font-size: 18px;
+    margin: 0; 
+    padding-left: 10px;
+    letter-spacing: .7px;
+}
+.mainside .nav .menu{
+    margin: 0;
+    padding: 0;
+}
+.mainside .nav .menu a {
+    color: #112255;
+    background-color: rgba(17, 34, 85, 0.1);
+    padding: 5px 12px;
+    border-radius: 7px;
+    margin: 0 5px;
+    display: inline-block;
+}
+.mainside .nav .menu a i{
+    font-size: 18px;
+}
+.mainside .information{
+    background-color: rgba(255, 149, 0, .1);
+    border-radius: 7px;
+    padding: 10px;
+}
+.mainside .information >*{
+    display: flex;
+    align-items: center;
+}
+.mainside .information .ri-information-line{
+    color: #FFF;
+    border-radius: 5px;
+    background-color: #FF9500;
+    font-size: 22px;
+    padding: 0 5px;
+}
+.mainside .information p{
+    margin: 0;
+    padding: 0!important;
+    margin-left : 15px;
+}
+.mainside .information span{
+    margin: 0 10px!important;
+}
+.mainside .information h6{
+    margin: 0;
+    padding: 0;
+}
+.mainside .information a{
+    color: #FF9500;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.mainside .bg-listClass{
+    padding-top: 15px;
+}
+.mainside .bg-listClass p{
+    font-size: 18px;
+    padding-left: 10px;
+    letter-spacing: .7px;
+}
+.mainside .cardMatkul{
+    display: flex;
+    margin-bottom: 20px;
+}
+.mainside .cardMatkul .card{
+    position: relative;
+    overflow: hidden;
+    width: 320px;
+    height: 9rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+    padding: 16px 23px;
+    color: #FFF;
+    margin-right: 20px;
+}
+.mainside .cardMatkul .createCard{
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 9rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+    padding: 16px 23px;
+    color: #707070;
+    background-color: #FFF;
+}
+.mainside .cardMatkul .createCard i{
+    font-size: 40px;
+}
+.mainside .cardMatkul .createCard p{
+    font-size: 15px;
+    font-family: sfsemi;
+}
+.mainside .cardMatkul .card .play{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.mainside .cardMatkul .card .play i{
+    font-size: 30px;
+    padding: 8px;
+    background-color: #FFF;
+    border-radius: 30px;
+    color: #00C9A7;
+}
+.mainside .cardMatkul .card h6{
+    font-family: sfregular;
+    letter-spacing: .5px;
+}
+.mainside .cardMatkul .card hr{
+    margin: 7px 1px;
+    width: 30px;
+    border: 1px solid #FFF;
+}
+.mainside .cardMatkul .card h5{
+    margin-bottom: 1px!important;  
+    letter-spacing: .5px;
+    font-family: sfsemi;
+    font-size: 14px;
+    padding: 4px 0 4px 0;
+}
+.mainside .cardMatkul .card p{
+    margin: 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    font-family: sflight;
+    padding: 0;
+}
+.mainside .cardMatkul .card p i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.mainside .section2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: max-content;
+    margin-top: 5px;
+}
+.mainside .section2 .matkul, .mainside .section2 .kelas{
+    width: 48%;
+    height: max-content;
+    margin-bottom: 20px;
+}
+.mainside .section2 .matkul p, .mainside .section2 .matkul a{
+    font-size: 18px;
+    letter-spacing: .7px;
+    /* padding: 0 10px; */
+}
+.mainside .section2 .kelas p, .mainside .section2 .kelas a{
+    font-size: 18px;
+    letter-spacing: .7px;
+    padding: 0 10px;
+}
+.mainside .section2 .matkul a, .mainside .section2 .kelas a{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.mainside .table{
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+}
+.mainside .table th{
+    text-align: center;
+    font-family: sflight;
+    color: rgba(0, 0, 0, .2);
+    font-size: 15px;
+    letter-spacing: .4px;
+    padding: 15px 12px;
+    border: none;
+}
+.mainside .table td{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: .4px;
+    padding: 12px;
+    border-width: 1px;
+}
+.userm i{
+    color: #FFF;
+    padding: 7px;
+    border-radius: 30px;
+    border: 3px solid #FFF;
+    position: relative;
+    font-size: 15px;
+}
+.user1{z-index: 5; margin-left: -18px;}
+.user2{z-index: 4; margin-left: -18px;}
+.user3{z-index: 3; margin-left: -18px;}
+.user4{z-index: 2; margin-left: -18px;}
+.user5{z-index: 1; margin-left: -18px;}
+
+form{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+}
+.form-group{
+    margin-top: 20px;
+}
+.bg-dashboard form label{
+    font-family: sfsemi;
+    color: #707070;
+    padding-left: 10px;
+    opacity: .5;
+}
+.bg-dashboard form .form-control{
+    padding: 0 15px;
+    border-radius: 5px;
+    height: 50px;
+    font-family: sfbold;
+}
+.bg-dashboard form .form-control::placeholder{
+    color: #707070;
+    font-family: sfsemi;
+}
+textarea{
+    min-height: 100px;
+    padding: 10px 15px!important;
+}
+.form-group button{
+    margin: 0 auto;
+    color: #FFF!important;
+    letter-spacing: .5px;
+    font-family: sfsemi;
+    letter-spacing: 1px;
+}
+.btn-darkblue{ background-color: rgba(17, 34, 85, .8);}
+.btn-darkblue:hover{ background-color: rgba(17, 34, 85, 1);}
+.btn:focus{ background-color:rgba(17, 34, 85, 1); color: #FFF!important;}
+.bg-left{
+    height: 100vh;
+    background-image: url('../images/component/kampus.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.modal{
+    margin-left: 100px;
+    z-index: 9999;
+}
+.modalDetail{
+    max-width: 1000px!important;
+}
+select, select option{
+    cursor: pointer;
+}
+.bg-video{
+    flex: 2;
+    height: 55vh;
+    position: relative;
+}
+.bg-video .video{
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+    height: max-content;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
+}
+.bg-video .video video{
+    width: 100%;
+    position: relative;
+}
+.bg-video .video .bg-action{
+    opacity: 0;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.1), #000000);
+    transition: .5s;
+}
+.bg-video .video .bg-action .action{
+    
+}
+.bg-video .video:hover .bg-action{
+    opacity: 1;
+}
+.bg-comment{
+    flex: 1;
+    height: 60vh;
+}
+.bg-comment .comment{
+    width: 100%;
+    height: 50vh;
+}
+.bg-comment .addComment{
+    width: 100%;
+    height: 10vh;
+}
+.bg-comment .addComment i{
+    font-size: 20px;
+    color: #707070;
+}
+.bg-comment .addComment input{
+    width: 80%;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #707070;
+    background-color: #F8F8F8;
+    font-size: 15px;
+    outline: none;
+    font-family: sfsemi;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+} 
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+.chatHeader{
+    width: 100%;
+}
+.chatHeader .name{
+    padding: 20px;
+    flex: 5;
+}
+.chatHeader .name .img{
+    border-radius: 50px;
+    background-color: #007AFF;
+    margin-right: 20px;
+    padding: 15px;
+}
+.chatHeader .name .img p{
+    margin: 0;
+    color: #FFF;
+    font-family: sfsemi;
+}
+.chatHeader .action{
+    padding: 20px;
+    flex: 1;
+}
+.chatHeader .action i{
+    font-size: 25px;
+    color: #707070;
+}
+.chatLimit{
+    background-color: #C1C3C1;
+    height: 1px;
+    width: 100%;
+}
+.chatText .text{
+    padding: 20px;
+    flex: 5;
+}
+.chatText .text input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #000;
+    font-family: sfsemi;
+    letter-spacing: .5px;
+}
+.chatText .action{
+    padding: 20px;
+    flex: 1;
+}
+.chatText .action i{
+    font-size: 25px
+}
+.chatText .aciton .send i{
+    color: #FFF!important;
+}
+.chatText .action .send p{
+    margin: 0;
+    font-family: sfsemi;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.chatContent .opponent{
+    padding: 50px;
+    width: 50%;
+}
+.chatContent .opponent .content{
+    background-color: rgb(245, 246, 250);
+    padding: 20px;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+}
+.chatContent .opponent .content p{
+    margin-top: 10px;
+}
+
+.chatContent .opponent{
+    padding: 20px;
+    flex: 5;
+}
+.chatContent .opponent .img{
+    border-radius: 50px;
+    background-color: salmon;
+    margin-right: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);    
+}
+.chatContent .opponent .img p{
+    margin: 0;
+    color: #FFF;
+    font-family: sfsemi;
+    font-size: 15px;
+}
+
+.chatContent .current{
+    padding: 50px;
+    width: 50%;
+}
+.chatContent .current .content{
+    background-color: #007AFF;
+    padding: 20px;
+    border-radius: 15px 15px 0px 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+}
+.chatContent .current .content p{
+    margin-top: 10px;
+    color: #FFF!important;
+}
+
+.chatContent .current{
+    padding: 20px;
+}
+.chatContent .current .img{
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    margin-left: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);    
+}
+.chatContent .current .img p{
+    margin: 0;
+    color: #007AFF;
+    font-family: sfsemi;
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 501px ){
+    /* .carousel{
+        display: none;
+    } */
+}
+
+@media only screen and (max-width: 500px) {
+    .card-matkul-overflow{
+        overflow-x: scroll;
+        padding-bottom: 14px;
+        z-index: 999;
+    }
+    .card-matkul-position{
+        margin-right: -30px;
+    }
+    .container{
+        padding: 0 30px!important;
+    }
+    .sidebar{
+        display: none!important;
+    }
+    .mainside{
+        width: 100%;
+        margin: 0;
+    }
+    /* .bg-listClass{
+        display: none;
+    } */
+    .mainside .carousel{
+        margin-bottom: 50px;
+    }
+    /* .flickity-viewport{
+        overflow: visible!important;
+        width: 350px;
+    }
+    .flickity-slider{
+        transform: translateX(11.46)!important;
+        margin-left: -30px;
+    } */
+    /* .mainside .carousel .card{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
+        padding: 16px 23px;
+        color: #FFF;
+        margin-right: 15px;
+        width: 250px;
+        height: 130px;
+    } */
+    .mainside .carousel .card h6{
+        font-family: sfregular;
+        letter-spacing: .5px;
+    }
+    .mainside .carousel .card hr{
+        margin: 7px 1px;
+        width: 30px;
+        border: 1px solid #FFF;
+    }
+    .mainside .carousel .card h5{
+        margin-bottom: 1px!important;  
+        letter-spacing: .5px;
+        font-family: sfsemi;
+        font-size: 14px;
+        padding: 4px 0 4px 0;
+    }
+    .mainside .carousel .card p{
+        margin: 0;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        font-family: sflight;
+        padding: 0;
+    }
+    .mainside .carousel .card p i{
+        margin-right: 15px;
+        font-size: 15px;
+    }
+}

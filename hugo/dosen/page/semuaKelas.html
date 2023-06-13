@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../images/component/uthlogos.png">
+    <title>E-Learning</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Font CSS -->
+    <link rel="stylesheet" href="../../css/remix/remixicon.css">
+
+</head>
+<body>
+    
+    <div class="bg-dashboard">
+        <div class="sidebar">
+            <div class="container">
+                
+                <div class="bg-profil d-flex align-items-center">
+                    <div class="container-fluid d-flex align-items-center">
+                        <div class="photo">
+                            <img src="../../images/user/1.jpeg" alt="Profil Pengguna">
+                        </div><!-- photo -->
+                        <div>
+                            <h6>Hugo F.</h6>
+                            <p>918236</p>
+                        </div>
+                        <a href="javascript:void(0)">
+                            <i class="ri-more-2-fill"></i>
+                        </a>
+                    </div><!-- container -->
+                </div><!-- bg-profil -->
+                <div class="d-flex flex-column justify-content-between" style="height: 82vh;">
+                    <div class="bg-menu">
+                        <ul>
+                            <li><a href="../index.html"><i class="ri-home-5-line"></i>Beranda</a></li>
+                            <li><a href="../kelas.html" class="active"><i class="ri-book-2-line"></i>Kelas</a></li>
+                            <li><a href="../dosen.html"><i class="ri-user-2-line"></i>Dosen</a></li>
+                        </ul>
+                    </div><!-- bg-menu -->
+                    <div class="copyright">
+                        <div class="container d-flex align-items-center">
+                            <i class="ri-copyright-line"></i><p>UTH</p>
+                        </div>
+                    </div><!-- copyright -->
+                </div>
+
+            </div><!-- Container -->
+        </div><!-- Sidebar -->
+        <div class="mainside">
+            <div class="container">
+                <div class="nav">
+                    <div class="greeting">
+                        <p style="margin-right: 10px;"><b>Hai,</b> Tutut!</p>
+                    </div><!-- greeting -->
+                    <div class="menu d-flex">
+                        <a href="#"><i class="ri-search-line"></i></a>
+                        <a href="#"><i class="ri-notification-3-line"></i></a>
+                    </div><!-- menu -->
+                </div><!-- nav -->
+
+                <div class="back">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../kelas.html">Kelas</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Daftar Semua Kelas</li>
+                    </ol>
+                </div><!-- back -->
+
+                <div class="section2">
+                    <div class="dosen col-12" style="padding: 0;">
+                        <p style="margin-left: 15px;"><b>Daftar</b> Semua Kelas</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Kelas</th>
+                                    <th class="text-left">Mata Kuliah</th>
+                                    <th>SKS</th>
+                                    <th class="text-left">UTS</th>
+                                    <th class="text-left">Mahasiswa</th>
+                                    <th>Opsi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#" class="n-underline text-black">P1</a></td>
+                                    <td class="text-left"><a href="javascript:void(0)" class="n-underline text-black" data-toggle="modal" data-target="#detailMahasiswa">Matematika</a></td>
+                                    <td>3</td>
+                                    <td class="text-muted text-left">Belum</td>
+                                    <td class="d-flex justify-content-start text-muted">
+                                        <div class="userm user1"><i class="ri-user-3-line bg-green"></i></div><!-- user-->
+                                        <div class="userm user2"><i class="ri-user-3-line bg-blue"></i></div><!-- user-->
+                                        <div class="userm user3"><i class="ri-user-3-line bg-orange"></i></div><!-- user-->
+                                        <div class="userm user4"><i class="ri-user-3-line bg-pink"></i></div><!-- user-->
+                                        <a href="#" class="n-underline text-muted"> +18</a>
+                                    </td>
+                                    <td><u><a href="tugas.html">Tugas</a></u> | <u><a href="materi.html" >Materi</a></u> | <u><a href="forum.html">Forum</a></u></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="#" class="n-underline text-black">P2</a></td>
+                                    <td class="text-left"><a href="#" class="n-underline text-black">Sistem Pakar</a></td>
+                                    <td>3</td>
+                                    <td class="text-muted text-left">Belum</td>
+                                    <td class="d-flex justify-content-start text-muted">
+                                        <div class="userm user1"><i class="ri-user-3-line bg-green"></i></div><!-- user-->
+                                        <div class="userm user2"><i class="ri-user-3-line bg-blue"></i></div><!-- user-->
+                                        <div class="userm user3"><i class="ri-user-3-line bg-orange"></i></div><!-- user-->
+                                        <div class="userm user4"><i class="ri-user-3-line bg-pink"></i></div><!-- user-->
+                                        <a href="#" class="n-underline text-muted"> +20</a>
+                                    <td><u><a href="tugas.html">Tugas</a></u> | <u><a href="materi.html" >Materi</a></u> | <u><a href="forum.html">Forum</a></u></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#" class="n-underline text-black">Q1</a></td>
+                                    <td class="text-left"><a href="#" class="n-underline text-black">Matematika</a></td>
+                                    <td>3</td>
+                                    <td class="text-left">20 November 2019</td >
+                                    <td class="d-flex justify-content-start text-muted">
+                                        <div class="userm user1"><i class="ri-user-3-line bg-green"></i></div><!-- user-->
+                                        <div class="userm user2"><i class="ri-user-3-line bg-blue"></i></div><!-- user-->
+                                        <div class="userm user3"><i class="ri-user-3-line bg-orange"></i></div><!-- user-->
+                                        <div class="userm user4"><i class="ri-user-3-line bg-pink"></i></div><!-- user-->
+                                        <a href="#" class="n-underline text-blue"> +32</a>
+                                    <td><u><a href="tugas.html">Tugas</a></u> | <u><a href="materi.html" >Materi</a></u> | <u><a href="forum.html">Forum</a></u></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- Modal Mahasiswa -->
+                        <div class="modal fade" id="detailMahasiswa" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modalDetail modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="detailMahasiswa">Daftar Mahasiswa</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table" style="box-shadow: none;">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th class="text-left">NAMA</th>
+                                                <th class="text-left">NIM</th>
+                                                <th class="text-left">E-Mail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+												<td class="text-left">John Doe</td>
+												<td class="text-left">19410100123</td>
+                                                <td class="text-left">johndoe@unipra.ac.id</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+												<td class="text-left">Jane Doe</td>
+												<td class="text-left">19410100456</td>
+                                                <td class="text-left">janedoe@unipra.ac.id</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div><!-- matkul -->
+                </div><!-- bg-section 2-->
+            </div><!-- container -->
+        </div><!-- Mainside -->
+    </div><!-- Dashboard -->
+    
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
